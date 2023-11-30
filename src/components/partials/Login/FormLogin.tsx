@@ -90,14 +90,14 @@ const FormLogin = () => {
           result.data?.refresh_token ? result.data?.refresh_token : ""
         );
         router.push("/");
+        setIsloading(false);
       } else {
         alert(result.errors?.[0].message);
       }
     } catch (err) {
       alert(err);
-      // setLoginError(err);
-    } finally {
       setIsloading(false);
+      // setLoginError(err);
     }
   };
   return (
@@ -135,7 +135,12 @@ const FormLogin = () => {
         </p>
       </div>
       <div className="flex w-full mt-14">
-        <Button color={"primary"} className="w-full !font-bold" size="big" isLoading={isLoading}>
+        <Button
+          color={"primary"}
+          className="w-full !font-bold"
+          size="big"
+          isLoading={isLoading}
+        >
           Sign In
         </Button>
       </div>
