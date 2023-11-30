@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../Button";
 
 const brandData = [
   {
@@ -17,7 +18,7 @@ const brandData = [
   },
 ];
 
-const Table = () => {
+const TableUser = () => {
   return (
     <div className="flex flex-col">
       <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-6">
@@ -82,7 +83,16 @@ const Table = () => {
           </div>
 
           <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-              <p className="text-primary dark:text-white">setting</p>
+            <p className="text-primary dark:text-white">
+              <div className="flex gap-2">
+                <Button size="small" color="secondary">
+                  Edit
+                </Button>
+                <Button size="small" color="dangerOutline">
+                  Remove
+                </Button>
+              </div>
+            </p>
           </div>
         </div>
       ))}
@@ -90,4 +100,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default TableUser;

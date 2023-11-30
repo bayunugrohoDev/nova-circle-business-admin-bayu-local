@@ -208,8 +208,8 @@ const Profile = () => {
             </div>
           </Card>
 
-          <div className="flex justify-end">
-            <Button color="tertiary">Cancel</Button>
+          <div className="flex justify-end gap-2">
+            <Button color="danger">Cancel</Button>
             <Button color="primary" className="!px-8">
               Save
             </Button>

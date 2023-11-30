@@ -1,7 +1,6 @@
-import React from 'react'
+import Recommendations from "@/components/partials/Recommendations";
+import React from "react";
 
 export default function Page() {
-  return (
-    <div>Recomandation</div>
-  )
+  return <Recommendations />;
 }

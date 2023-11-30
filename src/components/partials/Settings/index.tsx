@@ -4,11 +4,11 @@ import Breadcrumb from "@/components/elements/Breadcrumbs";
 import Button from "@/components/elements/Button";
 import Card from "@/components/elements/Card";
 import { Input } from "@/components/elements/Input";
-import Table from "@/components/elements/Tables";
+import TableUser from "@/components/elements/Table/TableUser";
 import React, { useState } from "react";
 
 const Settings = () => {
-  const [qrImageURL, setQrImageUrl] = useState<String>(
+  const [qrImageURL, setQrImageUrl] = useState<string>(
     "https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=https%3A%2F%2Fdr.dk"
   );
   const handleChange = (val: string) => {
@@ -41,7 +41,9 @@ const Settings = () => {
                   placeholder={"Please insert your confirm password"}
                 />
               </div>
-                <Button color="primary">Save</Button>
+               <div className="flex justify-end">
+                 <Button color="primary" className="px-20">Save</Button>
+               </div>
             </div>
             <div className="grid gap-4">
               <Input
@@ -53,7 +55,7 @@ const Settings = () => {
                 onChange={(e) => handleChange(e.target.value)}
               />
         
-              <div className="flex flex-col items-center gap-2">
+              <div className="flex flex-col items-end gap-2">
                 <div className="w-full bg-greyLight rounded-lg p-4 flex justify-center">
                   <img
                     id="qr-code"
@@ -62,7 +64,7 @@ const Settings = () => {
                     alt="QR code"
                   />
                 </div>
-                <Button color="secondary" size="small">
+                <Button color="secondary">
                   Download QR Code
                 </Button>
               </div>
@@ -71,7 +73,7 @@ const Settings = () => {
         </Card>
         
         <Card title="Users">
-              <Table/>
+              <TableUser/>
         </Card>
       </div>
     </>

@@ -1,8 +1,7 @@
-import React from "react";
 interface RecycleBinProps {
   color?: string;
 }
-const RecycleBin = ({ color = "black" }) => {
+const RecycleBin = ({ color = "black" }:RecycleBinProps) => {
   return (
     <svg
       width="24"
