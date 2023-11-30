@@ -9,12 +9,12 @@ const typeButton = {
 
 const sizeButton = {
   big: "p-4",
-  normal: "p-[8px]",
-  small: "p-1",
+  normal: "py-2 px-4",
+  small: "!py-1 text-sm",
   custom: "",
 };
 
-interface CustomButtonProps
+interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color: "primary" | "secondary" | "tertiary" | "custom";
   children: any;
@@ -23,14 +23,14 @@ interface CustomButtonProps
   isLoading?: boolean;
 }
 
-const CustomButton = ({
+const Button = ({
   children,
   className,
   color,
   size,
   isLoading,
   ...rest
-}: CustomButtonProps) => {
+}: ButtonProps) => {
   return (
     <button
       className={`flex  ${typeButton[color]} ${
@@ -50,4 +50,4 @@ const CustomButton = ({
   );
 };
 
-export default CustomButton;
+export default Button;
