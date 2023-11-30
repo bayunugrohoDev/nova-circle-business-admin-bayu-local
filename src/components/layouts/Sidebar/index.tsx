@@ -118,7 +118,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                       href={item.redirectTo}
                       className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium duration-300 text-white ease-in-out ${
                         pathname == item.redirectTo &&
-                        "text-secondary"
+                        "!text-secondary"
                       }`}
                     >
                       {/* icon */}

@@ -94,6 +94,7 @@ const FormLogin = () => {
         alert(result.errors?.[0].message);
       }
     } catch (err) {
+      alert(err);
       // setLoginError(err);
     } finally {
       setIsloading(false);

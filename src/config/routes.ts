@@ -5,7 +5,7 @@ const Routes = {
     recomendations: { path: '/recomendations', title: 'Recomendations' },
     list: { path: '/lists', title: 'Lists' },
     communication: { path: '/comunication', title: 'Communication' },
-    settings: { path: '/settings', title: 'Setting' },
+    settings: { path: '/settings', title: 'Settings' },
     default: { path: '/users', title: 'Users' },
   };
   
