@@ -36,7 +36,7 @@ const Input = forwardRef<HTMLInputElement,InputProps>(
     const [showPass, setShowPass] = useState(false);
     return (
       <div className="flex flex-col gap-2">
-        <label className=" text-greyDarkest dark:text-white">
+        <label className=" text-greyDarkest ">
           {label} {required && <span className="text-danger">*</span>}
         </label>
         <div className="relative">

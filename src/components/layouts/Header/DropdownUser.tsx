@@ -57,7 +57,7 @@ const DropdownUser = () => {
         href="#"
       >
         <span className="hidden text-right lg:block">
-          <span className="block text-sm font-medium text-black dark:text-white">
+          <span className="block text-sm font-medium text-black">
             { userProfile?.first_name }  { userProfile?.last_name }
           </span>
           <span className="block text-xs">Admin</span>
@@ -94,11 +94,11 @@ const DropdownUser = () => {
         ref={dropdown}
         onFocus={() => setDropdownOpen(true)}
         onBlur={() => setDropdownOpen(false)}
-        className={`absolute right-0 mt-4 flex w-60 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark ${
+        className={`absolute right-0 mt-4 flex w-60 flex-col rounded-sm border border-stroke bg-white shadow-default ${
           dropdownOpen === true ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col gap-5 border-b border-stroke px-6 py-4 dark:border-strokedark">
+        <ul className="flex flex-col gap-5 border-b border-stroke px-6 py-4 ">
           <li>
             <Link
               href="/profile"

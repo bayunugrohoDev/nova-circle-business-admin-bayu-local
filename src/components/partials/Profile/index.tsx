@@ -35,11 +35,11 @@ const Profile = () => {
                       ) : (
                         <label
                           htmlFor="dropzone-file"
-                          className="flex flex-col items-center justify-center w-full h-64 border-2 border-grey border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                          className="flex flex-col items-center justify-center w-full h-64 border-2 border-grey border-dashed rounded-lg cursor-pointer bg-gray-50   hover:bg-gray-100  "
                         >
                           <div className="flex flex-col items-center justify-center pt-5 pb-6">
                             <svg
-                              className="w-8 h-8 mb-4 text-greyDarker dark:text-gray-400"
+                              className="w-8 h-8 mb-4 text-greyDarker "
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -53,12 +53,12 @@ const Profile = () => {
                                 d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
                               />
                             </svg>
-                            <p className="mb-2 text-sm text-greyDarker dark:text-gray-400">
+                            <p className="mb-2 text-sm text-greyDarker ">
                               <span className="font-semibold">
                                 No Image Found, Click to upload
                               </span>{" "}
                             </p>
-                            <p className="text-xs text-greyDarker dark:text-gray-400">
+                            <p className="text-xs text-greyDarker ">
                               mp4, AVI, MOV or WebM (MAX. 800x400px)
                             </p>
                           </div>
@@ -72,7 +72,7 @@ const Profile = () => {
                     </div>
                     <input
                       type="file"
-                      className="w-full mt-2 cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-medium outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:py-3 file:px-5 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:file:border-form-strokedark dark:file:bg-white/30 dark:file:text-white dark:focus:border-primary"
+                      className="w-full mt-2 cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-medium outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:py-3 file:px-5 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter  "
                     />
                   </div>
                   <div className="w-full">
@@ -92,11 +92,11 @@ const Profile = () => {
                       ) : (
                         <label
                           htmlFor="dropzone-file"
-                          className="flex flex-col items-center justify-center w-full h-64 border-2 border-grey border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600"
+                          className="flex flex-col items-center justify-center w-full h-64 border-2 border-grey border-dashed rounded-lg cursor-pointer bg-gray-50   hover:bg-gray-100 "
                         >
                           <div className="flex flex-col items-center justify-center pt-5 pb-6">
                             <svg
-                              className="w-8 h-8 mb-4 text-greyDarker dark:text-gray-400"
+                              className="w-8 h-8 mb-4 text-greyDarker "
                               aria-hidden="true"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
@@ -110,12 +110,12 @@ const Profile = () => {
                                 d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
                               />
                             </svg>
-                            <p className="mb-2 text-sm text-greyDarker dark:text-gray-400">
+                            <p className="mb-2 text-sm text-greyDarker ">
                               <span className="font-semibold">
                                 No Image Found, Click to upload
                               </span>{" "}
                             </p>
-                            <p className="text-xs text-greyDarker dark:text-gray-400">
+                            <p className="text-xs text-greyDarker ">
                               mp4, AVI, MOV or WebM (MAX. 800x400px)
                             </p>
                           </div>
@@ -129,19 +129,19 @@ const Profile = () => {
                     </div>
                     <input
                       type="file"
-                      className="w-full mt-2 cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-medium outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:py-3 file:px-5 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:file:border-form-strokedark dark:file:bg-white/30 dark:file:text-white dark:focus:border-primary"
+                      className="w-full mt-2 cursor-pointer rounded-lg border-[1.5px] border-stroke bg-transparent font-medium outline-none transition file:mr-5 file:border-collapse file:cursor-pointer file:border-0 file:border-r file:border-solid file:border-stroke file:bg-whiter file:py-3 file:px-5 file:hover:bg-primary file:hover:bg-opacity-10 focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter "
                     />
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <label className="mb-2.5 block text-black dark:text-white">
+                  <label className="mb-2.5 block text-black ">
                     Description
                   </label>
                   <textarea
                     rows={6}
                     placeholder="Type your message"
-                    className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
+                    className="w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 font-medium outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter"
                   ></textarea>
 
                   <Input

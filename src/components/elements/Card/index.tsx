@@ -5,10 +5,10 @@ interface CardProps {
 }
 const Card = (props: CardProps) => {
   return (
-    <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+    <div className="rounded-sm border border-stroke bg-white shadow-default">
       <div className="border-b border-stroke py-4 px-6 flex justify-between items-center">
         {props.title && (
-          <h3 className="font-medium text-black dark:text-white">
+          <h3 className="font-medium text-black ">
             {props.title}
           </h3>
         )}

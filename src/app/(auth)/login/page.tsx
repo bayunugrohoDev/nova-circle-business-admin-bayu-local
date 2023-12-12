@@ -22,7 +22,7 @@ const Page: NextPage = () => {
         </Link>
       </div>
       <div className="flex h-screen w-full items-center justify-center bg-white p-4 md:p-4 ">
-        <div className="w-full md:w-1/2 lg:w-[480px] rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
+        <div className="w-full md:w-1/2 lg:w-[480px] rounded-sm border border-stroke bg-white shadow-default">
           <div className="w-full flex flex-wrap items-center">
             <div className="w-full p-4 sm:p-12 xl:p-17">
               <h2 className="mb-9 font-areaInktrap text-left text-3xl  text-primary">

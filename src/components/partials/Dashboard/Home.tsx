@@ -38,7 +38,7 @@ const Home: React.FC = () => {
           }
         >
           <div className="flex flex-col">
-            <div className="grid grid-cols-5 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
+            <div className="grid grid-cols-5 rounded-sm bg-gray-2  sm:grid-cols-5">
               <div className="p-2.5 text-center xl:p-5">
                 <h5 className="text-sm font-medium uppercase xsm:text-base">
                   No
@@ -55,15 +55,15 @@ const Home: React.FC = () => {
                 return (
                   <div
                     key={idx}
-                    className={`grid grid-cols-5 sm:grid-cols-5 border-b border-stroke dark:border-strokedark`}
+                    className={`grid grid-cols-5 sm:grid-cols-5 border-b border-stroke `}
                   >
                     <div className="flex items-center justify-center p-2.5 xl:p-5">
-                      <p className="hidden text-black dark:text-white sm:block">
+                      <p className="hidden text-black  sm:block">
                         {item}
                       </p>
                     </div>
                     <div className="flex items-center justify-center p-2.5 xl:p-5">
-                      <p className="hidden text-black dark:text-white sm:block">
+                      <p className="hidden text-black  sm:block">
                         List {item}
                       </p>
                     </div>
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
           }
         >
           <div className="flex flex-col">
-            <div className="grid grid-cols-5 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
+            <div className="grid grid-cols-5 rounded-sm bg-gray-2  sm:grid-cols-5">
               <div className="p-2.5 text-center xl:p-5 col-span-1">
                 <h5 className="text-sm font-medium uppercase xsm:text-base">
                   No
@@ -102,15 +102,15 @@ const Home: React.FC = () => {
                 return (
                   <div
                     key={idx}
-                    className={`grid grid-cols-5 sm:grid-cols-5 border-b border-stroke dark:border-strokedark`}
+                    className={`grid grid-cols-5 sm:grid-cols-5 border-b border-stroke `}
                   >
                     <div className="flex items-center justify-center p-2.5 xl:p-5 col-span-1">
-                      <p className="hidden text-black dark:text-white sm:block">
+                      <p className="hidden text-black  sm:block">
                         {item}
                       </p>
                     </div>
                     <div className="flex items-center justify-left p-2.5 xl:p-5 col-span-4">
-                      <p className="hidden text-black dark:text-white sm:block">
+                      <p className="hidden text-black  sm:block">
                         Recommendation {item}
                       </p>
                     </div>

@@ -23,7 +23,7 @@ const brandData = [
 const TableUser = () => {
   return (
     <div className="flex flex-col">
-      <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-6">
+      <div className="grid grid-cols-3 rounded-sm bg-gray-2  sm:grid-cols-6">
         <div className="p-2.5 xl:p-5">
           <h5 className="text-sm font-medium uppercase xsm:text-base">Foto</h5>
         </div>
@@ -57,7 +57,7 @@ const TableUser = () => {
           className={`grid grid-cols-3 sm:grid-cols-6 ${
             key === brandData.length - 1
               ? ""
-              : "border-b border-stroke dark:border-strokedark"
+              : "border-b border-stroke "
           }`}
           key={key}
         >
@@ -67,13 +67,13 @@ const TableUser = () => {
             </div>
           </div>
           <div className="flex items-center justify-center p-2.5 xl:p-5">
-            <p className="hidden text-black dark:text-white sm:block">
+            <p className="hidden text-black  sm:block">
               {brand.first_name}
             </p>
           </div>
 
           <div className="flex items-center justify-center p-2.5 xl:p-5">
-            <p className="text-black dark:text-white">{brand.last_name}K</p>
+            <p className="text-black">{brand.last_name}K</p>
           </div>
 
           <div className="flex items-center justify-center p-2.5 xl:p-5">
@@ -81,11 +81,11 @@ const TableUser = () => {
           </div>
 
           <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-            <p className="text-black dark:text-white">{brand.status}</p>
+            <p className="text-black">{brand.status}</p>
           </div>
 
           <div className="hidden items-center justify-center p-2.5 sm:flex xl:p-5">
-            <p className="text-primary dark:text-white">
+            <p className="text-primary">
               <div className="flex gap-2">
                 <Button size="small" color="secondary">
                   <PencilIcon className="w-4" /> Edit
