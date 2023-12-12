@@ -4,7 +4,7 @@ const typeButton = {
   primary: "bg-primary text-greyLightest hover:bg-midnight",
   secondary: "bg-transparent border text-primary border-primary border-[1.5px] hover:bg-primary hover:text-white",
   tertiary: "bg-transparent text-primary",
-  danger: "bg-danger text-white",
+  danger: "bg-danger text-white hover:opacity-80",
   dangerOutline: "bg-transparent text-danger border  border-[1.5px] border-danger hover:bg-danger hover:text-white",
   custom: "",
 };

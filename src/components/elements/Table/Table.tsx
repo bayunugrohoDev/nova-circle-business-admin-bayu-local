@@ -88,7 +88,7 @@ const Table = (props: TableProps) => {
                       </div>
                       <div
                         key={`${col.accessor}-${didx}`}
-                        className={`px-3 py-2 ${col.tdClassName} `}
+                        className={`px-3 py-2 text-greyDarkest ${col.tdClassName} `}
                       >
                         {(row as any)?.[col.accessor]}
                       </div>
@@ -109,7 +109,7 @@ const Table = (props: TableProps) => {
           showTotal={(total, range: any) => (
             <p className="text-md text-greyDarkest">
               Showing results
-              <span className="font-bold text-black">
+              <span className="font-bold text-greyDarkest">
                 {" "}
                 {range[0]} -{range[1] > props.rows ? props.rows : range[1]}
               </span>{" "}

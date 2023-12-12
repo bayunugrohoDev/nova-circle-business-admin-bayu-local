@@ -113,13 +113,13 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               MENU
             </h3>
 
-            <ul className="mb-6 flex flex-col gap-1.5">
+            <ul className="mb-6 flex flex-col gap-2">
               {sideNavItems.map((item: sideNavItemsProps, idx: number) => {
                 return (
                   <li key={idx}>
                     <Link
                       href={item.redirectTo}
-                      className={`group relative flex items-center gap-2.5 py-2 hover:text-primary px-4 font-medium duration-300 text-greyDarker ease-in-out ${
+                      className={`group relative flex items-center gap-2.5 py-2 hover:text-primary px-4 font-medium duration-300 text-greyDarkest ease-in-out ${
                         pathname == item.redirectTo &&
                         "!text-primary !font-bold bg-greyLight rounded-lg"
                       }`}
@@ -128,7 +128,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         className:
                           pathname == item.redirectTo
                             ? "stroke-primary"
-                            : "stroke-greyDarker group-hover:stroke-primary",
+                            : "stroke-greyDarkest group-hover:stroke-primary",
                         color: null,
                       })}
                       {item.name}

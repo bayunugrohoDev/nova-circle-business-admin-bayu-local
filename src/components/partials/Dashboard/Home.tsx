@@ -58,12 +58,12 @@ const Home: React.FC = () => {
                     className={`grid grid-cols-5 sm:grid-cols-5 border-b border-stroke `}
                   >
                     <div className="flex items-center justify-center p-2.5 xl:p-5">
-                      <p className="hidden text-black  sm:block">
+                      <p className="hidden text-greyDarkest  sm:block">
                         {item}
                       </p>
                     </div>
                     <div className="flex items-center justify-center p-2.5 xl:p-5">
-                      <p className="hidden text-black  sm:block">
+                      <p className="hidden text-greyDarkest  sm:block">
                         List {item}
                       </p>
                     </div>
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
           title="Recommendations"
           addElementOnHeader={
             <Link
-              href={"/recommendations"}
+              href={"/recomendations"}
               className="text-xs underline text-greyDarker"
             >
               See All
@@ -105,12 +105,12 @@ const Home: React.FC = () => {
                     className={`grid grid-cols-5 sm:grid-cols-5 border-b border-stroke `}
                   >
                     <div className="flex items-center justify-center p-2.5 xl:p-5 col-span-1">
-                      <p className="hidden text-black  sm:block">
+                      <p className="hidden text-greyDarkest  sm:block">
                         {item}
                       </p>
                     </div>
                     <div className="flex items-center justify-left p-2.5 xl:p-5 col-span-4">
-                      <p className="hidden text-black  sm:block">
+                      <p className="hidden text-greyDarkest  sm:block">
                         Recommendation {item}
                       </p>
                     </div>
