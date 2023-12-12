@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import SidebarLinkGroup from "./SidebarLinkGroup";
 import Image from "next/image";
 import sideNavItems from "@//config/sideNavItems";
+import { sideNavItemsProps } from "@/types/layout";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -59,7 +60,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-primary duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${
+      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-white drop-shadow-1  shadow-2  duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${
         sidebarOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -67,12 +68,14 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
         <Link className="flex items-center gap-4 p-2" href="/">
           <Image
-            width={62}
-            height={72}
-            src={"/images/nc-logo-full-white.svg"}
+            width={45}
+            height={55}
+            src={"/images/nc-logo-full-black.svg"}
             alt="Logo"
           />
-          <h2 className="text-white font-bold text-xl">
+
+        
+          <h2 className="text-primary font-bold text-xl">
             Business <br /> Dashboard
           </h2>
         </Link>
@@ -103,7 +106,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
       <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
         {/* <!-- Sidebar Menu --> */}
-        <nav className="mt-5 py-4 px-4 lg:mt-9 lg:px-6">
+        <nav className="mt-5 py-4 px-4 lg:mt-4 lg:px-4">
           {/* <!-- Menu Group --> */}
           <div>
             <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
@@ -111,17 +114,23 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
             </h3>
 
             <ul className="mb-6 flex flex-col gap-1.5">
-              {sideNavItems.map((item: any, idx: number) => {
+              {sideNavItems.map((item: sideNavItemsProps, idx: number) => {
                 return (
                   <li key={idx}>
                     <Link
                       href={item.redirectTo}
-                      className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium duration-300 text-white ease-in-out ${
+                      className={`group relative flex items-center gap-2.5 py-2 hover:text-primary px-4 font-medium duration-300 text-greyDarker ease-in-out ${
                         pathname == item.redirectTo &&
-                        "!text-secondary"
+                        "!text-primary !font-bold bg-greyLight rounded-lg"
                       }`}
                     >
-                      {/* icon */}
+                      {item.icon({
+                        className:
+                          pathname == item.redirectTo
+                            ? "stroke-primary"
+                            : "stroke-greyDarker group-hover:stroke-primary",
+                        color: null,
+                      })}
                       {item.name}
                     </Link>
                   </li>

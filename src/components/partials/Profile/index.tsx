@@ -1,7 +1,9 @@
 import Breadcrumb from "@/components/elements/Breadcrumbs";
 import Button from "@/components/elements/Button";
 import Card from "@/components/elements/Card";
-import RecycleBin from "@/components/elements/Icon/RecycleBin";
+import CloseIcon from "@/components/elements/Icons/CloseIcon";
+import RecycleBin from "@/components/elements/Icons/RecycleBinIcon";
+import SaveIcon from "@/components/elements/Icons/SaveIcon";
 import { Input } from "@/components/elements/Input";
 import React from "react";
 
@@ -12,24 +14,18 @@ const Profile = () => {
 
       <div className="grid grid-cols-1 gap-9">
         <div className="flex flex-col gap-9 w-full">
-          {/* <!-- Contact Form --> */}
-          <div className="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
-            <div className="border-b border-stroke py-4 px-6.5 dark:border-strokedark">
-              <h3 className="font-medium text-black dark:text-white">
-                Profile Description
-              </h3>
-            </div>
+          <Card title="Profile Description">
             <form action="#">
               <div className="p-6.5">
-                <div className="mb-4.5 flex gap-4">
+                <div className="mb-6 flex gap-4">
                   <div className="w-full">
                     <div className="flex flex-col justify-center w-full">
                       <div className="mb-3  text-black ">Upload Image</div>
                       {false ? (
                         <div className="relative">
-                            <button className="absolute top-2 right-2 p-2 bg-danger rounded-full ">
-                             <RecycleBin color="white" />
-                            </button>
+                          <button className="absolute top-2 right-2 p-2 bg-danger rounded-full ">
+                            <RecycleBin color="white" />
+                          </button>
                           <img
                             className=" w-full h-64 object-cover rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
@@ -51,9 +47,9 @@ const Profile = () => {
                             >
                               <path
                                 stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
                               />
                             </svg>
@@ -84,9 +80,9 @@ const Profile = () => {
                       <div className="mb-3  text-black ">Upload Video</div>
                       {true ? (
                         <div className="relative">
-                            <button className="absolute top-2 right-2 p-2 bg-danger rounded-full ">
-                             <RecycleBin color="white" />
-                            </button>
+                          <button className="absolute top-2 right-2 p-2 bg-danger rounded-full ">
+                            <RecycleBin color="white" />
+                          </button>
                           <img
                             className=" w-full h-64 object-cover rounded-lg"
                             src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
@@ -108,9 +104,9 @@ const Profile = () => {
                             >
                               <path
                                 stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
                                 d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
                               />
                             </svg>
@@ -180,7 +176,7 @@ const Profile = () => {
                 </div>
               </div>
             </form>
-          </div>
+          </Card>
 
           <Card
             title="Galery"
@@ -209,9 +205,9 @@ const Profile = () => {
           </Card>
 
           <div className="flex justify-end gap-2">
-            <Button color="danger">Cancel</Button>
+            <Button color="danger"> <CloseIcon className="w-4"/>  Cancel</Button>
             <Button color="primary" className="!px-8">
-              Save
+              <SaveIcon className="w-4" color="white"/> Save
             </Button>
           </div>
         </div>

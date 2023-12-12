@@ -1,8 +1,9 @@
-"use client"
+"use client";
 
 import Breadcrumb from "@/components/elements/Breadcrumbs";
 import Button from "@/components/elements/Button";
 import Card from "@/components/elements/Card";
+import SaveIcon from "@/components/elements/Icons/SaveIcon";
 import { Input } from "@/components/elements/Input";
 import TableUser from "@/components/elements/Table/TableUser";
 import React, { useState } from "react";
@@ -41,20 +42,23 @@ const Settings = () => {
                   placeholder={"Please insert your confirm password"}
                 />
               </div>
-               <div className="flex justify-end">
-                 <Button color="primary" className="px-20">Save</Button>
-               </div>
+              <div className="flex justify-end">
+                <Button color="primary" className="px-20">
+                  {" "}
+                  <SaveIcon color="white" className="h-5" /> Save
+                </Button>
+              </div>
             </div>
             <div className="grid gap-4">
               <Input
                 label="Profile Link"
                 type="text"
                 placeholder={"Please insert your profile link"}
-                value={'https://novacircle.com/spots/hotels/nameofbusiness'}
+                value={"https://novacircle.com/spots/hotels/nameofbusiness"}
                 required
                 onChange={(e) => handleChange(e.target.value)}
               />
-        
+
               <div className="flex flex-col items-end gap-2">
                 <div className="w-full bg-greyLight rounded-lg p-4 flex justify-center">
                   <img
@@ -64,16 +68,14 @@ const Settings = () => {
                     alt="QR code"
                   />
                 </div>
-                <Button color="secondary">
-                  Download QR Code
-                </Button>
+                <Button color="secondary">Download QR Code</Button>
               </div>
             </div>
           </div>
         </Card>
-        
+
         <Card title="Users">
-              <TableUser/>
+          <TableUser />
         </Card>
       </div>
     </>

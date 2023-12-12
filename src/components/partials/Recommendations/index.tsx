@@ -3,7 +3,9 @@
 import Breadcrumb from "@/components/elements/Breadcrumbs";
 import Button from "@/components/elements/Button";
 import Card from "@/components/elements/Card";
-import AddIcon from "@/components/elements/Icon/AddIcon";
+import AddIcon from "@/components/elements/Icons/AddIcon";
+import PencilIcon from "@/components/elements/Icons/PencilIcon";
+import RecycleBinIcon from "@/components/elements/Icons/RecycleBinIcon";
 import Table from "@/components/elements/Table/Table";
 import React, { useState } from "react";
 
@@ -48,10 +50,14 @@ const Recommendations = () => {
         no: idx + 1,
         name: `Recommendation ${item}`,
         created_at: `${item} Jan 2024`,
-        action: <div className="flex gap-2">
-         <Button size="small" color="secondary">Edit</Button>
-         <Button size="small" color="dangerOutline">Remove</Button>
-        </div>,
+        action:  <div className="flex gap-2">
+        <Button size="small" color="secondary">
+          <PencilIcon className="w-3" /> Edit
+        </Button>
+        <Button size="small" color="dangerOutline">
+          <RecycleBinIcon className="w-3" /> Remove
+        </Button>
+      </div>,
       };
     }
   );

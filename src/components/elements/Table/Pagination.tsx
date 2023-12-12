@@ -1,6 +1,6 @@
 // import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import ArrowLeft from "../Icon/ArrowLeft";
+import ArrowLeft from "../Icons/ArrowLeftIcon";
 
 type PaginationProps = {
   total: number;

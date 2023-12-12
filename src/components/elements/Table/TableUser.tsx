@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Button from "../Button";
+import PencilIcon from "../Icons/PencilIcon";
+import RecycleBinIcon from "../Icons/RecycleBinIcon";
 
 const brandData = [
   {
@@ -86,10 +88,10 @@ const TableUser = () => {
             <p className="text-primary dark:text-white">
               <div className="flex gap-2">
                 <Button size="small" color="secondary">
-                  Edit
+                  <PencilIcon className="w-4" /> Edit
                 </Button>
                 <Button size="small" color="dangerOutline">
-                  Remove
+                  <RecycleBinIcon className="w-4" /> Remove
                 </Button>
               </div>
             </p>

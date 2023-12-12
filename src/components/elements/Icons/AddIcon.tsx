@@ -13,20 +13,20 @@ const AddIcon = ({ color = "black", className }: AddIconProps) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1249_741)">
+      <g clipPath="url(#clip0_1249_741)">
         <path
           d="M12 1.32143V22.6786"
           stroke={color}
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M1.32143 11.9342H22.6786"
           stroke={color}
-          stroke-width="1.5"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
